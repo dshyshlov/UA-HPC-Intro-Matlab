@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N matlab_helloworld
+#PBS –m bea
+#PBS –M NetID@email.arizona.edu
+#PBS -W group_list=kanchukaitis
+#PBS -q standard
+#PBS -l select=1:ncpus=28:mem=168gb:pcmem=6gb
+#PBS -l walltime=0:1:0
+#PBS -l cput=0:28:0
+
+
+module load matlab
+
+cd ~/UA_HPC_Intro
+
+matlab -nodisplay -nosplash < test.m
