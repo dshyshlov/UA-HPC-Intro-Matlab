@@ -11,6 +11,6 @@
 
 module load matlab
 
-cd ~/UA_HPC_Intro
+cd ~/UA-HPC-Intro-Matlab
 
 matlab -nodisplay -nosplash < test.m
